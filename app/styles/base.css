@@ -34,7 +34,7 @@
     }
 
     .text-display {
-        @apply font-heading text-[32px] lg:text-[48px] leading-[1.2] tracking-[-0.02em] font-light;
+        @apply font-heading text-[32px] lg:text-[48px] leading-[1.2] tracking-[-0.02em] font-semibold;
     }
 
     /* Headings */
@@ -59,6 +59,10 @@
         @apply font-body text-[14px] lg:text-[16px] leading-[1.7] tracking-normal font-normal;
     }
 
+    .text-body-test {
+        @apply font-body text-[14px] lg:text-[16px] tracking-normal leading-tight font-medium;
+    }
+
     .text-small {
         @apply font-body text-[12px] lg:text-[13px] leading-relaxed tracking-normal font-normal;
     }
@@ -68,7 +72,17 @@
         @apply font-body text-[10px] lg:text-[11px] leading-none tracking-[0.15em] font-medium uppercase;
     }
 
+    .text-label-test {
+        @apply font-normal lg:text-[15px];
+    }
+
     .section-surface-1 {
         @apply bg-surface text-primary;
+    }
+
+    @layer utilities {
+        .h-section {
+            height: calc(100vh - var(--header-height));
+        }
     }
 }
