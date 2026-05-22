@@ -1,3 +1,4 @@
+import Header from "@/components/ui/header/Header";
 import "./styles/globals.css";
 
 import type { Metadata } from "next";
@@ -30,7 +31,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="sv" className={`antialiased ${dmSans.variable} ${cormorant.variable}`}>
-            <body className="min-h-full flex flex-col">{children}</body>
+            <body className="min-h-full flex flex-col">
+                <Header />
+                {children}
+            </body>
         </html>
     );
 }

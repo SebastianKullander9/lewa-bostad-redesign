@@ -67,4 +67,8 @@
     .text-label {
         @apply font-body text-[10px] lg:text-[11px] leading-none tracking-[0.15em] font-medium uppercase;
     }
+
+    .section-surface-1 {
+        @apply bg-surface text-primary;
+    }
 }
