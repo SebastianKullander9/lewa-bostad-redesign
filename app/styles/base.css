@@ -43,7 +43,7 @@
     }
 
     .text-h2 {
-        @apply font-heading text-[26px] lg:text-[36px] leading-[1.2] tracking-[-0.01em] font-light;
+        @apply font-heading text-[26px] lg:text-[36px] leading-[1.2] tracking-[-0.01em] font-bold;
     }
 
     .text-h3 {
@@ -78,6 +78,10 @@
 
     .section-surface-1 {
         @apply bg-surface text-primary;
+    }
+
+    .section-surface2 {
+        @apply bg-surface2 text-primary;
     }
 
     @layer utilities {
