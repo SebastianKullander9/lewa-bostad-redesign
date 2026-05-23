@@ -7,8 +7,4 @@ export const menu = [
         href: "/om-oss",
         label: "Om oss",
     },
-    {
-        href: "/kontakt",
-        label: "Kontakt",
-    },
 ];

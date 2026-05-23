@@ -5,6 +5,7 @@ import AboutCTA from "@/components/sections/aboutCTA/AboutCTA";
 import KeyFigures from "@/components/sections/keyfigures/Keyfigures";
 import Contact from "@/components/sections/contact/Contact";
 import InterestFormGeneral from "@/components/sections/interestFormGeneral/InterestFormGeneral";
+import Footer from "@/components/ui/footer/Footer";
 
 export default function Home() {
     return (

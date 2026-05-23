@@ -1,4 +1,5 @@
 import Header from "@/components/ui/header/Header";
+import Footer from "@/components/ui/footer/Footer";
 import "./styles/globals.css";
 
 import type { Metadata } from "next";
@@ -34,6 +35,7 @@ export default function RootLayout({
             <body className="min-h-full flex flex-col">
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );
