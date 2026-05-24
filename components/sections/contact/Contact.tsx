@@ -8,8 +8,8 @@ export default function Contact() {
         <section className="section-surface" aria-label="Kontakta Lewa Bostad">
             <div className="grid grid-cols-12 base-x-p base-y-p">
                 <div className="col-span-12">
-                    <p className="text-small">Kontakt</p>
-                    <h2 className="text-display mb-md md:mb-0">
+                    <p className="text-small text-text-muted">Kontakt</p>
+                    <h2 className="text-display text-text mb-md md:mb-0">
                         Din bostadsresa börjar här.
                         <br />
                         Med ett hej.

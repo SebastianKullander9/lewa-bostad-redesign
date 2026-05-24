@@ -7,7 +7,7 @@ export default function AboutHero() {
         <section className="h-auto md:h-[calc(100vh-var(--header-height))] mt-(--header-height) grid grid-cols-12">
             <div className="col-span-12 md:col-span-6 flex items-center justify-center order-2 md:order-1">
                 <div className="flex flex-col gap-md md:gap-lg base-x-p base-y-p">
-                    <h1 className="text-display">
+                    <h1 className="text-display text-text">
                         På väg mot något nytt.
                         <br />
                         Precis som du.

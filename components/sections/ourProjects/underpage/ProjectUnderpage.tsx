@@ -22,7 +22,7 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
             </div>
             <div className="base-x-p base-y-p w-full grid grid-cols-12 md:gap-x-xl md:gap-y-5xl">
                 <div className="col-span-12 md:col-span-6">
-                    <h2 className="text-display pb-md md:mb-0 border-b border-text/20 md:border-0">
+                    <h2 className="text-display text-text pb-md md:mb-0 border-b border-text/20 md:border-0">
                         {project.title},{" "}
                         <span className="italic font-medium">{project.location}</span>
                     </h2>
@@ -46,7 +46,7 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
                 <div className="col-span-12 md:hidden flex flex-col gap-2xl">
                     {project.textBlocks.map((block, index) => (
                         <div key={index} className="flex flex-col gap-lg">
-                            <h3 className="text-h3 mb-sm">{block.title}</h3>
+                            <h3 className="text-h3 text-text mb-sm">{block.title}</h3>
                             <div className="relative aspect-3/2 w-full overflow-hidden">
                                 <Image
                                     src={project.images.gallery[index + 1].src}
@@ -74,9 +74,9 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
                     </div>
                 </div>
                 <div className="hidden md:block col-span-12 md:col-span-6">
-                    <h3 className="text-h2 font-medium mb-md">{project.textBlocks[0].title}</h3>
+                    <h3 className="text-h2 text-text font-medium mb-md">{project.textBlocks[0].title}</h3>
                     <p className="mb-xl text-body">{project.textBlocks[0].text}</p>
-                    <h3 className="text-h2 font-medium mb-md">{project.textBlocks[1].title}</h3>
+                    <h3 className="text-h2 text-text font-medium mb-md">{project.textBlocks[1].title}</h3>
                     <p className="mb-xl text-body">{project.textBlocks[1].text}</p>
                 </div>
             </div>

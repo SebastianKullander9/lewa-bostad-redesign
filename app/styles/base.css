@@ -2,6 +2,7 @@
     body {
         font-family: var(--font-body);
         background-color: var(--color-surface);
+        color: var(--color-primary);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         margin: 0;
@@ -34,7 +35,7 @@
     }
 
     .text-display {
-        @apply font-heading text-[32px] lg:text-[48px] leading-[1.2] tracking-[-0.02em] font-semibold;
+        @apply font-heading text-[32px] lg:text-[48px] leading-[1.2] tracking-[-0.02em] font-thin;
     }
 
     /* Headings */

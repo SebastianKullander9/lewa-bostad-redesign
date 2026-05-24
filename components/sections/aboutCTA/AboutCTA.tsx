@@ -11,9 +11,9 @@ export default function AboutCTA() {
             aria-label="Call to action för om oss"
         >
             <div className="col-span-12">
-                <p className="text-small ">Om oss</p>
+                <p className="text-small text-text-muted">Om oss</p>
                 {/* TODO: Ask client to provide a text they want here, preferably matching length */}
-                <h2 className="text-display mb-md md:mb-0">
+                <h2 className="text-display text-text mb-md md:mb-0">
                     Bra blir ännu bättre. <br />
                     Tillsammans.
                 </h2>

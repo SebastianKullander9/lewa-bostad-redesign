@@ -33,7 +33,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <p className="text-[12vw] text-text-muted font-heading font-light leading-none uppercase tracking-tight pt-6xl">
+            <p className="text-[12vw] text-surface/15 font-heading font-light leading-none uppercase tracking-tight pt-6xl">
                 Lewa Bostad
             </p>
 
