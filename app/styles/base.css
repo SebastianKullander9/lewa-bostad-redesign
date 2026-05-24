@@ -26,11 +26,11 @@
     }
 
     .base-x-p {
-        @apply px-lg;
+        @apply px-md md:px-lg;
     }
 
     .base-y-p {
-        @apply py-lg;
+        @apply py-md md:py-lg;
     }
 
     .text-display {

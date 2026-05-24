@@ -1,5 +1,6 @@
 import Image from "next/image";
 import hero from "@/public/hero/hero.webp";
+import { imageSizes } from "@/app/lib/imageSizes";
 
 export default function Hero() {
     return (
@@ -8,7 +9,7 @@ export default function Hero() {
                 src={hero}
                 alt="hero image, showing a living room from one of lewas estate projects"
                 fill
-                sizes="100vw"
+                sizes={imageSizes.fullWidth}
                 priority
                 fetchPriority="high"
                 className="object-cover"

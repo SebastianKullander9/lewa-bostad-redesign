@@ -28,7 +28,7 @@ export default function Input({ label, name, type = "text" }: InputProps) {
                 name={name}
                 id={name}
                 className={cn(
-                    "pl-30 py-sm w-full text-text-muted",
+                    "pl-20 md:pl-30 py-sm w-full text-text-muted",
                     "focus:outline-none focus:text-text",
                 )}
             />

@@ -10,24 +10,23 @@ export default function AboutCTA() {
             className="section-surface base-x-p base-y-p grid grid-cols-12"
             aria-label="Call to action för om oss"
         >
-            <div className="col-span-12 relative">
-                <p className="text-small absolute top-0 left-0">Om oss</p>
+            <div className="col-span-12">
+                <p className="text-small ">Om oss</p>
                 {/* TODO: Ask client to provide a text they want here, preferably matching length */}
-                <h2 className="text-display indent-80 mb-3xl">
-                    Vi tror på att ett hem är mer än fyra väggar och ett tak, det är grannen du
-                    lånar en kryddmått av, barnen som leker fritt på gården och känslan av att
-                    verkligen höra hemma någonstans.
+                <h2 className="text-display mb-md md:mb-0">
+                    Bra blir ännu bättre. <br />
+                    Tillsammans.
                 </h2>
             </div>
-            <div className="col-span-6 flex items-center relative">
-                <p className="max-w-prose text-lead">
+            <div className="col-span-12 md:col-span-6 flex flex-col items-start md:justify-center relative order-2 md:order-1">
+                <p className="max-w-prose text-lead mb-md md:mb-0">
                     Två bostadsaktörer med lång erfarenhet har gått samman och bildat Lewa Bostad.
                     Företaget drivs av Johan Bondebjer och Magnus Ekvall från tidigare Bjerbo Bostad
                     samt Fredrik Lidjan från Reliwe. Med en stark projektportfölj och god finansiell
                     ställning fortsätter vi att skapa hållbara hem och värde för både kunder och
                     samhälle.
                 </p>
-                <div className="absolute bottom-0 left-0">
+                <div className="md:absolute md:bottom-0 md:left-0">
                     <Link
                         href="/om-oss"
                         className="text-small flex flex-row items-center gap-xs group"
@@ -35,12 +34,15 @@ export default function AboutCTA() {
                         <span className="group-hover:underline underline-offset-2">
                             LÄR KÄNNA OSS
                         </span>
-                        <IconChevronRightFillDuo18 size={12} className="mb-0.5" />
+                        <IconChevronRightFillDuo18
+                            size={12}
+                            className="mb-0.5 scale-85 md:scale-100"
+                        />
                     </Link>
                 </div>
             </div>
-            <div className="col-span-6 relative">
-                <div className="relative aspect-3/2 w-full overflow-hidden">
+            <div className="col-span-12 md:col-span-6 relative order-1 md:order-2">
+                <div className="relative aspect-3/2 w-full overflow-hidden mb-md md:mb-0">
                     <Image
                         src={ctaAbout}
                         alt="Kök från projektet Kummelnäshöjden"
