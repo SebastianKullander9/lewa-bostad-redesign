@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+import { imageSizes } from "@/app/lib/imageSizes";
 
 interface ProjectCardProps {
     title: string;
@@ -10,12 +11,16 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, location, status, image }: ProjectCardProps) {
     return (
-        <article className="flex flex-col gap-sm">
-            <Image
-                src={image}
-                alt={`Lewa Bostads projekt ${title} i ${location}`}
-                className="object-cover"
-            />
+        <article className="flex-col gap-sm">
+            <div className="relative aspect-3/2 w-full overflow-hidden">
+                <Image
+                    src={image}
+                    alt={`Lewa Bostads projekt ${title} i ${location}`}
+                    fill
+                    sizes={imageSizes.halfWidth}
+                    className="object-cover"
+                />
+            </div>
             <div>
                 <p className="text-lead text-text">{title}</p>
                 <p className="text-small text-text-muted">{location}</p>

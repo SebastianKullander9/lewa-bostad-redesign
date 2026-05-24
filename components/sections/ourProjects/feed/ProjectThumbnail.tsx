@@ -1,6 +1,7 @@
 import { Project } from "../data";
 import Image from "next/image";
 import Link from "next/link";
+import { imageSizes } from "@/app/lib/imageSizes";
 
 interface ProjectThumbnailProps {
     project: Project;
@@ -16,6 +17,7 @@ export default function ProjectThumbnail({ project, index }: ProjectThumbnailPro
                         src={project.images.thumbnail.src}
                         className="object-cover"
                         fill
+                        sizes={imageSizes.halfWidth}
                         priority={index < 2}
                         alt={project.images.thumbnail.alt}
                     />

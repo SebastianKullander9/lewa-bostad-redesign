@@ -1,6 +1,7 @@
 import Image from "next/image";
 import exteriorWood from "@/public/projects/kummelnashojden/Exterior_2_Wood_002.webp";
 import { aboutQAData } from "./data";
+import { imageSizes } from "@/app/lib/imageSizes";
 
 export default function AboutQA() {
     return (
@@ -13,8 +14,14 @@ export default function AboutQA() {
                     </div>
                 ))}
             </div>
-            <div className="col-span-6 relative">
-                <Image src={exteriorWood} alt="" className="object-cover" />
+            <div className="col-span-6 relative aspect-3/2">
+                <Image
+                    src={exteriorWood}
+                    alt="Exteriör av Kummelnäshöjden i trä"
+                    fill
+                    sizes={imageSizes.halfWidth}
+                    className="object-cover"
+                />
             </div>
         </section>
     );

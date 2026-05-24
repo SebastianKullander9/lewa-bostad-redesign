@@ -1,6 +1,7 @@
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import { Project } from "../data";
 import Image from "next/image";
+import { imageSizes } from "@/app/lib/imageSizes";
 
 interface ProjectUnderpageProps {
     project: Project;
@@ -13,6 +14,8 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
                 <Image
                     src={project.images.gallery[0].src}
                     className="object-cover"
+                    priority
+                    sizes={imageSizes.fullWidth}
                     fill
                     alt={project.images.gallery[0].alt}
                 />
@@ -41,11 +44,15 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
                     </div>
                 </div>
                 <div className="col-span-6">
-                    <Image
-                        src={project.images.gallery[1].src}
-                        alt={project.images.gallery[1].alt}
-                        className="object-contain"
-                    />
+                    <div className="relative aspect-3/2 w-full overflow-hidden">
+                        <Image
+                            src={project.images.gallery[1].src}
+                            alt={project.images.gallery[1].alt}
+                            fill
+                            sizes={imageSizes.halfWidth}
+                            className="object-cover"
+                        />
+                    </div>
                 </div>
                 <div className="col-span-6">
                     <h3 className="text-h2 font-medium mb-md">{project.textBlocks[0].title}</h3>

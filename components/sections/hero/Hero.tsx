@@ -8,6 +8,9 @@ export default function Hero() {
                 src={hero}
                 alt="hero image, showing a living room from one of lewas estate projects"
                 fill
+                sizes="100vw"
+                priority
+                fetchPriority="high"
                 className="object-cover"
             />
         </section>

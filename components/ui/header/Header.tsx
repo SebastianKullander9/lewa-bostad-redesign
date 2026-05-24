@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="fixed w-full base-x-p py-sm z-100 section-surface-1" role="banner">
+        <header className="fixed w-full base-x-p py-sm z-100 section-surface" role="banner">
             <div className="flex flex-row justify-between items-center">
                 <Link href="/" aria-label="Lewa Bostad - Till startsidan">
                     <Image

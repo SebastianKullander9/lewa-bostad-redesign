@@ -1,5 +1,6 @@
 import Image from "next/image";
 import interior from "@/public/projects/kummelnashojden/Interior_7_002.webp";
+import { imageSizes } from "@/app/lib/imageSizes";
 
 export default function AboutHero() {
     return (
@@ -21,7 +22,13 @@ export default function AboutHero() {
                 </div>
             </div>
             <div className="col-span-6 relative overflow-hidden">
-                <Image src={interior} alt="" className="object-cover" />
+                <Image
+                    src={interior}
+                    alt=""
+                    className="object-cover"
+                    fill
+                    sizes={imageSizes.halfWidth}
+                />
             </div>
         </section>
     );

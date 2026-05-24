@@ -2,6 +2,7 @@ import Image from "next/image";
 import ctaAbout from "@/public/aboutCTA/aboutCTA.webp";
 import Link from "next/link";
 import { IconChevronRightFillDuo18 } from "nucleo-ui-fill-duo-18";
+import { imageSizes } from "@/app/lib/imageSizes";
 
 export default function AboutCTA() {
     return (
@@ -39,14 +40,15 @@ export default function AboutCTA() {
                 </div>
             </div>
             <div className="col-span-6 relative">
-                <Link href="/om-oss">
-                    {/* TODO: image needs to be handled correctly (fill, sized parent, sizes) */}
+                <div className="relative aspect-3/2 w-full overflow-hidden">
                     <Image
                         src={ctaAbout}
-                        alt="Kök från projektet kummelnäshöjden"
+                        alt="Kök från projektet Kummelnäshöjden"
+                        fill
+                        sizes={imageSizes.halfWidth}
                         className="object-cover"
                     />
-                </Link>
+                </div>
             </div>
         </section>
     );

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import contactImage from "@/public/contact/contact.webp";
 import ContactDetails from "@/components/ui/contactDetails/ContactDetails";
+import { imageSizes } from "@/app/lib/imageSizes";
 
 export default function Contact() {
     return (
@@ -23,11 +24,15 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="col-span-6 relative">
-                    <Image
-                        src={contactImage}
-                        alt="Vardagsrum från ett av lewas projekt"
-                        className="object-cover"
-                    />
+                    <div className="relative aspect-3/2 w-full overflow-hidden">
+                        <Image
+                            src={contactImage}
+                            alt="Vardagsrum från ett av Lewas projekt"
+                            fill
+                            sizes={imageSizes.halfWidth}
+                            className="object-cover"
+                        />
+                    </div>
                 </div>
             </div>
         </section>

@@ -67,6 +67,10 @@
         @apply font-body text-[12px] lg:text-[13px] leading-relaxed tracking-normal font-normal;
     }
 
+    .text-keyfigure {
+        @apply text-6xl;
+    }
+
     /* Label — uppercase metadata style */
     .text-label {
         @apply font-body text-[10px] lg:text-[11px] leading-none tracking-[0.15em] font-medium uppercase;
@@ -76,7 +80,7 @@
         @apply font-normal lg:text-[15px];
     }
 
-    .section-surface-1 {
+    .section-surface {
         @apply bg-surface text-primary;
     }
 
