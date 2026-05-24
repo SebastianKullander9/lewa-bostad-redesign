@@ -4,9 +4,9 @@ import { imageSizes } from "@/app/lib/imageSizes";
 
 export default function AboutHero() {
     return (
-        <section className="h-section mt-(--header-height) grid grid-cols-12">
-            <div className="col-span-6 flex items-center justify-center">
-                <div className="flex flex-col gap-lg">
+        <section className="h-auto md:h-[calc(100vh-var(--header-height))] mt-(--header-height) grid grid-cols-12">
+            <div className="col-span-12 md:col-span-6 flex items-center justify-center order-2 md:order-1">
+                <div className="flex flex-col gap-md md:gap-lg base-x-p base-y-p">
                     <h1 className="text-display">
                         På väg mot något nytt.
                         <br />
@@ -21,7 +21,7 @@ export default function AboutHero() {
                     </p>
                 </div>
             </div>
-            <div className="col-span-6 relative overflow-hidden">
+            <div className="col-span-12 md:col-span-6 relative overflow-hidden order-1 md:order-2 h-[60vh] md:h-auto">
                 <Image
                     src={interior}
                     alt=""
