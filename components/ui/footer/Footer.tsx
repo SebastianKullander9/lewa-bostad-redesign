@@ -37,12 +37,11 @@ export default function Footer() {
                 Lewa Bostad
             </p>
 
-            {/* Legal */}
             <div className="flex flex-row justify-between py-lg border-t border-surface/10">
-                <p className="text-small text-surface/50">© 2025 Lewa Bostad</p>
+                <p className="text-small text-surface">© 2025 Lewa Bostad</p>
                 <Link
                     href="/integritetspolicy"
-                    className="text-small text-surface/50 hover:opacity-60 transition-opacity"
+                    className="text-small text-surface hover:opacity-60 transition-opacity"
                 >
                     Integritetspolicy
                 </Link>

@@ -23,7 +23,7 @@ export default function Header() {
                     aria-label="Huvudnavigation"
                 >
                     {menu.map((item, index) => (
-                        <Link key={index} href={item.href}>
+                        <Link key={index} href={item.href} className="link-hover-fade">
                             {item.label}
                         </Link>
                     ))}

@@ -23,8 +23,7 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
             <div className="base-x-p base-y-p w-full grid grid-cols-12 md:gap-x-xl md:gap-y-5xl">
                 <div className="col-span-12 md:col-span-6">
                     <h2 className="text-display text-text pb-md md:mb-0 border-b border-text/20 md:border-0">
-                        {project.title},{" "}
-                        <span className="italic font-medium">{project.location}</span>
+                        {project.title}, <span className="italic">{project.location}</span>
                     </h2>
                 </div>
                 <div className="col-span-12 md:col-span-6 flex flex-row items-center justify-between mt-lg mb-2xl md:my-0 border-b border-text/20 pb-lg md:border-b-0">
@@ -74,9 +73,9 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
                     </div>
                 </div>
                 <div className="hidden md:block col-span-12 md:col-span-6">
-                    <h3 className="text-h2 text-text font-medium mb-md">{project.textBlocks[0].title}</h3>
+                    <h3 className="text-h2 text-text mb-md">{project.textBlocks[0].title}</h3>
                     <p className="mb-xl text-body">{project.textBlocks[0].text}</p>
-                    <h3 className="text-h2 text-text font-medium mb-md">{project.textBlocks[1].title}</h3>
+                    <h3 className="text-h2 text-text mb-md">{project.textBlocks[1].title}</h3>
                     <p className="mb-xl text-body">{project.textBlocks[1].text}</p>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import { projectCTAData } from "./data";
+import Link from "next/link";
 
 interface ProjectCTAProps {
     background?: "section-surface" | "section-surface2";
@@ -20,14 +21,18 @@ export default function ProjectCTA({ background = "section-surface2" }: ProjectC
                     <h2 className="text-display text-text md:mb-2xl">Våra projekt</h2>
                 </div>
                 {projectCTAData.map((item, index) => (
-                    <div key={index} className="col-span-12 md:col-span-6 relative">
+                    <Link
+                        href="/vara-projekt"
+                        key={index}
+                        className="col-span-12 md:col-span-6 relative"
+                    >
                         <ProjectCard
                             title={item.title}
                             location={item.location}
                             status={item.status}
                             image={item.image}
                         />
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>

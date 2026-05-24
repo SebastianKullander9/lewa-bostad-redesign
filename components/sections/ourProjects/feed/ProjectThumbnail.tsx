@@ -12,13 +12,13 @@ export default function ProjectThumbnail({ project, index }: ProjectThumbnailPro
     return (
         <Link
             href={`/vara-projekt/${project.slug}`}
-            className="col-span-12 md:col-span-6 cursor-default"
+            className="col-span-12 md:col-span-6 cursor-default group"
         >
             <article>
                 <div className="relative aspect-3/2 overflow-hidden flex">
                     <Image
                         src={project.images.thumbnail.src}
-                        className="object-cover"
+                        className="object-cover transition-transform duration-650 group-hover:scale-[1.02]"
                         fill
                         sizes={imageSizes.halfWidth}
                         priority={index < 2}
@@ -28,10 +28,14 @@ export default function ProjectThumbnail({ project, index }: ProjectThumbnailPro
                 <div className="mt-sm flex flex-row md:flex-col justify-between">
                     <div>
                         <p className="text-lead text-text">{project.title}</p>
-                        <p className="text-body text-text-muted">{project.location}</p>
+                        <p className="text-body text-text-muted group-hover:text-text transition-colors duration-200">
+                            {project.location}
+                        </p>
                     </div>
 
-                    <p className="text-body text-text-muted">{project.status}</p>
+                    <p className="text-body text-text-muted group-hover:text-text transition-colors duration-200">
+                        {project.status}
+                    </p>
                 </div>
             </article>
         </Link>

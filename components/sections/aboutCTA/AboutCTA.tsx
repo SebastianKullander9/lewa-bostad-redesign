@@ -42,15 +42,17 @@ export default function AboutCTA() {
                 </div>
             </div>
             <div className="col-span-12 md:col-span-6 relative order-1 md:order-2">
-                <div className="relative aspect-3/2 w-full overflow-hidden mb-md md:mb-0">
-                    <Image
-                        src={ctaAbout}
-                        alt="Kök från projektet Kummelnäshöjden"
-                        fill
-                        sizes={imageSizes.halfWidth}
-                        className="object-cover"
-                    />
-                </div>
+                <Link href="/om-oss" className="group cursor-default">
+                    <div className="relative aspect-3/2 w-full overflow-hidden mb-md md:mb-0">
+                        <Image
+                            src={ctaAbout}
+                            alt="Kök från projektet Kummelnäshöjden"
+                            fill
+                            sizes={imageSizes.halfWidth}
+                            className="object-cover transition-transform duration-650 group-hover:scale-[1.02]"
+                        />
+                    </div>
+                </Link>
             </div>
         </section>
     );
