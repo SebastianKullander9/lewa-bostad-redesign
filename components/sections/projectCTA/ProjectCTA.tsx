@@ -1,6 +1,9 @@
 import ProjectCard from "./ProjectCard";
 import { projectCTAData } from "./data";
 
+interface ProjectCTAProps {
+    background?: "section-surface" | "section-surface2";
+}
 /*
 TODO: 
 - Add link to article
@@ -9,9 +12,9 @@ TODO:
 - WCAG for links
 */
 
-export default function ProjectCTA() {
+export default function ProjectCTA({ background = "section-surface2" }: ProjectCTAProps) {
     return (
-        <section className="section-surface2 w-full text-text">
+        <section className={`${background} w-full text-text`}>
             <div className="base-x-p py-3xl w-full grid grid-cols-12 gap-xs">
                 <div className="col-span-12">
                     <h2 className="text-h2 mb-2xl">Våra projekt</h2>
