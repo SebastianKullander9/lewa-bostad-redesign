@@ -25,6 +25,13 @@ export default function MobileMenu({ isOpen, setIsOpen }: MobileMenuProps) {
     };
 
     useEffect(() => {
+        document.body.style.overflow = isOpen ? "hidden" : "";
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isOpen]);
+
+    useEffect(() => {
         setIsOpen(false);
     }, [pathname, setIsOpen]);
 

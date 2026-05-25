@@ -13,7 +13,10 @@ export default function Header() {
 
     return (
         <>
-            <header className="fixed w-full base-x-p base-y-p z-100 section-surface" role="banner">
+            <header
+                className="fixed w-full base-x-p base-y-p md:py-sm z-100 section-surface"
+                role="banner"
+            >
                 <div className="flex flex-row justify-between items-center">
                     <Link href="/" aria-label="Lewa Bostad - Till startsidan">
                         <Image
@@ -35,7 +38,7 @@ export default function Header() {
                         ))}
                     </nav>
                     <div className="md:hidden">
-                        <Hamburger setState={setIsOpen} />
+                        <Hamburger isOpen={isOpen} setState={setIsOpen} />
                     </div>
                 </div>
             </header>
